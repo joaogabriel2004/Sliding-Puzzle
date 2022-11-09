@@ -30,26 +30,26 @@ class _MyHomePageState extends State<MyHomePage> {
   final List<String> _numero =
       List.generate(16, (index) => index == 0 ? '' : index.toString());
   _mudaNum(int i) {
-    int _emptyIndex = _numero.lastIndexOf('');
-    int _previousItem = i - 1;
-    int _nextItem = i + 1;
-    int _previousRow = i - 4;
-    int _nextRow = i + 4;
+    int _posVazia = _numero.lastIndexOf('');
+    int _numeroAnterior = i - 1;
+    int _proxNumero = i + 1;
+    int _linhaAnterior = i - 4;
+    int _proximaLinha = i + 4;
 
-    if (_emptyIndex == _previousItem) {
-      _numero[_previousItem] = _numero[i];
-
-      _numero[i] = '';
-    } else if (_emptyIndex == _nextItem) {
-      _numero[_nextItem] = _numero[i];
+    if (_posVazia == _numeroAnterior) {
+      _numero[_numeroAnterior] = _numero[i];
 
       _numero[i] = '';
-    } else if (_emptyIndex == _previousRow) {
-      _numero[_previousRow] = _numero[i];
+    } else if (_posVazia == _proxNumero) {
+      _numero[_proxNumero] = _numero[i];
 
       _numero[i] = '';
-    } else if (_emptyIndex == _nextRow) {
-      _numero[_nextRow] = _numero[i];
+    } else if (_posVazia == _linhaAnterior) {
+      _numero[_linhaAnterior] = _numero[i];
+
+      _numero[i] = '';
+    } else if (_posVazia == _proximaLinha) {
+      _numero[_proximaLinha] = _numero[i];
 
       _numero[i] = '';
     }
@@ -64,8 +64,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
-    debugShowCheckedModeBanner:
-    false;
+    debugShowCheckedModeBanner: false;
     return Scaffold(
       appBar: AppBar(
         title: const Text('Jogo Dev Mobile'),
