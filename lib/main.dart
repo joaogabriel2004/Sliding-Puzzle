@@ -30,26 +30,26 @@ class _MyHomePageState extends State<MyHomePage> {
   final List<String> _numero =
       List.generate(16, (index) => index == 0 ? '' : index.toString());
   _mudaNum(int i) {
-    int _emptyIndex = _itens.lastIndexOf('');
+    int _emptyIndex = _numero.lastIndexOf('');
     int _previousItem = i - 1;
     int _nextItem = i + 1;
     int _previousRow = i - 4;
     int _nextRow = i + 4;
 
     if (_emptyIndex == _previousItem) {
-      _numero[_previousItem] = _itens[i];
+      _numero[_previousItem] = _numero[i];
 
       _numero[i] = '';
     } else if (_emptyIndex == _nextItem) {
-      _numero[_nextItem] = _itens[i];
+      _numero[_nextItem] = _numero[i];
 
       _numero[i] = '';
     } else if (_emptyIndex == _previousRow) {
-      _numero[_previousRow] = _itens[i];
+      _numero[_previousRow] = _numero[i];
 
       _numero[i] = '';
     } else if (_emptyIndex == _nextRow) {
-      _numero[_nextRow] = _itens[i];
+      _numero[_nextRow] = _numero[i];
 
       _numero[i] = '';
     }
