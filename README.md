@@ -16,7 +16,7 @@ Um jogo clássico de quebra-cabeça deslizante (15-puzzle) implementado em Flutt
 1. Tenha o Flutter instalado (versão estável recomendada)
 2. Clone o repositório ou copie o código
 3. Execute no terminal:
-4. 
+
 ```
 flutter pub get
 flutter run
