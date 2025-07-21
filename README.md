@@ -7,16 +7,19 @@ Um jogo clássico de quebra-cabeça deslizante (15-puzzle) implementado em Flutt
 - Objetivo: Ordene os números de 1 a 15 com o espaço vazio no canto inferior direito
 
 🛠️ Funcionalidades Implementadas
+
 ✔️ Lógica de movimento válido (apenas peças adjacentes ao vazio)
+
 ✔️ Embaralhamento inicial aleatório
+
 ✔️ Interface limpa e responsiva
+
 ✔️ Toque simples para mover peças
 
 ⚙️ Como Executar
 1. Tenha o Flutter instalado (versão estável recomendada)
 2. Clone o repositório ou copie o código
 3. Execute no terminal:
-
 ```
 flutter pub get
 flutter run
